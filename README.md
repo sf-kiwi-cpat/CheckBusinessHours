@@ -1,4 +1,4 @@
-# CheckBusinessHours
+# Check Business Hours from an Einstein Bot
 
 This code is for checking whether the current time is within Business Hours or not. It's intended use is from an Einstein Bot when using Chat, which can take the boolean response and send a different message, or attempt to transfer to an agent or not based on the response. Note that for the Messaging channels (e.g. SMS), you can use the OOB setup to set Business Hours on the Messaging Channel, which the bot will then check before transferring to an agent - no need for this code.
 
