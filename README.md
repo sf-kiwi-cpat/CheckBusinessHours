@@ -4,7 +4,7 @@ This code is for checking whether the current time is within Business Hours or n
 
 The request takes in the 'Business Hours' Name field - you can find this by going to 'Setup --> Business Hours', and the 'Name' will be shown in the list displayed on that admin screen in the 'Business Hours Name' column.
 
-Make sure after creating and adding this code to your Org, that you give your bot permission to acces it. You can then call it from an 'Action' element and pass in the name you have found above (you need to change the 'Source' drop down from 'Variable' to 'Value', then type in the name).
+Make sure after creating and adding this code to your Org, that you give your bot permission to access it. You can then call it from an 'Action' element and pass in the name you have found above (you need to change the 'Source' drop down from 'Variable' to 'Value', then type in the name).
 
 
 Please upvote this idea to gain momentum for it to be added to the product: https://trailblazer.salesforce.com/ideaView?id=08730000000Dk59AAC (this idea doesn't mention a bot, but is related to having chat offered to agents only during certain hours).
