@@ -1,13 +1,13 @@
 global class CheckBusinessHours {
     
-	global static Boolean checkBusinessHoursById(String requestId)
+	global static Boolean checkBusinessHoursById(String businessHoursId)
     	{
 		Boolean isWithin = false;
-		if (requestId != null)
+		if (businessHoursId != null)
 		{
 			// Making use of BusinessHours Apex method
 			// Check out this page for more details: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_businesshours.htm
-		    isWithin = BusinessHours.isWithin(requestId, System.now());
+		    isWithin = BusinessHours.isWithin(businessHoursId, System.now());
 		}
 
 		return isWithin;
