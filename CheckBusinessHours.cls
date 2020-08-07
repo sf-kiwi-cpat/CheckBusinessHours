@@ -14,11 +14,11 @@ global class CheckBusinessHours {
     	}
 
     	@InvocableMethod(label='Check Now is within Business Hours by Name')
-	global static List<Boolean> checkBusinessHoursByName(List<String> requestNames)
+	global static List<Boolean> checkBusinessHoursByName(List<String> businessHoursName)
     	{
 		List<Boolean> results = new List<Boolean>();
 
-		for(String name : requestNames) {
+		for(String name : businessHoursName) {
 			// Look up the Business hours by name to find the ID
 		    List<BusinessHours> businessHours = [SELECT Id FROM BusinessHours where Name =:name AND IsActive = true];
 		    if (businessHours.size() == 1) {
